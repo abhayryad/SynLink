@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:synlink_app/core/chat_page.dart';
 import 'package:synlink_app/features/auth/presentation/pages/login_page.dart';
 import 'package:synlink_app/features/auth/presentation/pages/register_page.dart';
 import 'package:synlink_app/features/auth/data/datasource/auth_remote_data_source.dart';
@@ -41,8 +42,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: RegisterPage(),
         routes:{
-          '/login': (context) => LoginPage(),
-          '/register': (context) => RegisterPage(),
+          '/login': (_) => LoginPage(),
+          '/register': (_) => RegisterPage(),
+          '/chatPage':(_)=>ChatPage(),
           
         },
       ),

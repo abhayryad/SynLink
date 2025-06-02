@@ -18,7 +18,7 @@ class AuthRemoteDataSource {
     );
 
     if (response.statusCode == 200) {
-      return UserModel.fromJson(jsonDecode(response.body));
+      return UserModel.fromJson(jsonDecode(response.body)['user']);
     } else {
       throw Exception('Failed to login');
     }

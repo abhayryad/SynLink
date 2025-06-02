@@ -83,7 +83,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 if (state is AuthLoading) {
                   return Center(child: CircularProgressIndicator());
                 }
-                return AuthButton(text: 'Register', onPressed: _onRegister);
+                return AuthButton(
+                  text: 'Register',
+                  onPressed: _onRegister
+                  );
               }, 
 
               listener: (context, state){
@@ -99,9 +102,6 @@ class _RegisterPageState extends State<RegisterPage> {
                 }
               }
               ),
-              SizedBox(height: 20),
-
-     
               SizedBox(height: 20),
 
               LoginPrompt(

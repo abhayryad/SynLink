@@ -12,6 +12,7 @@ import 'package:synlink_app/features/auth/domain/entities/user_entity.dart';
     required super.id,
     required super.username,
     required super.email,
+    required super.token,
   });
 
 
@@ -20,6 +21,7 @@ import 'package:synlink_app/features/auth/domain/entities/user_entity.dart';
       id: json['id'],
       username: json['username'],
       email: json['email'],
+      token: json['token'] ?? '', // Default to empty string if token is not present
     );
   }
 }
