@@ -45,6 +45,7 @@ class MyApp extends StatelessWidget {
           '/login': (_) => LoginPage(),
           '/register': (_) => RegisterPage(),
           '/chatPage':(_)=>ChatPage(),
+          //random to test git
           
         },
       ),
