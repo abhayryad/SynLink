@@ -17,6 +17,7 @@ app.listen(PORT, () => {
 import express, { Request, Response } from "express";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes";
+import conversationRoutes from "./routes/conversationsRoutes";// Ensure custom types are loaded
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use(express.json()); // Parse JSON bodies
 
 // Routes
 app.use("/auth", authRoutes);
+app.use("/conversations", conversationRoutes);
 
 // Optional root route for health check
 app.get("/", (req: Request, res: Response) => {
