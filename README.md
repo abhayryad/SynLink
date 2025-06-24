@@ -1,16 +1,31 @@
-# synlink_app
+# 🔗 SynLink — Real-Time Chat Application
 
-A new Flutter project.
+SynLink is a full-stack mobile chat application built using modern technologies to enable seamless real-time communication. It provides a smooth, responsive chat experience with features like live messaging, typing indicators, delivery status, and persistent chat history.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- 📱 Beautiful, responsive UI built with **Flutter**
+- 🧠 Reactive state management using **Bloc**
+- 🔁 Real-time bi-directional communication via **Socket.io**
+- 🔐 Authentication and session handling (JWT-based or token auth)
+- 💬 Live chat with message delivery and read receipts
+- 🧾 Typing indicators and user presence updates
+- 🗂️ Organized, persistent conversations stored in **PostgreSQL**
+- 📦 Scalable backend using **Node.js** and RESTful APIs
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 📱 Frontend (Flutter)
+- Flutter SDK (3.x+)
+- Bloc (State Management)
+- Dio (HTTP Client)
+- WebSocket integration for real-time updates
+- Responsive & adaptive UI design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🌐 Backend (Node.js)
+- Node.js with Express.js framework
+- **Socket.io** for WebSocket-based real-time communication
+- REST API endpoints for user auth, chat history, and settings
+- **PostgreSQL** for relational data persistence
+- Sequelize ORM for database modeling
+- JSON Web Tokens (JWT) for authentication
